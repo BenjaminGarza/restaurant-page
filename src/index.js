@@ -1,2 +1,3 @@
-import setup.js
-console.log("it's alive!");
+import Setup from './modules/Setup';
+Setup.test();
+Setup.initialize();
