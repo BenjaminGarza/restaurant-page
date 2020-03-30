@@ -1,15 +1,15 @@
 const Setup = (() => {
   const getImage = () => {
-    let img = `
-    <img src ='https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
-    `;
+    //Left off here let img = https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260;;
     return { img };
   };
-  const setImage = (parameter) => {
+  const setImage = (imgUrl) => {
   let div = document.querySelector('#content');
   console.log(div);
-  console.log(parameter.img);
-  div.appendChild(parameter);
+  console.log(imgUrl);
+  let img = document.createElement('img');
+  img.src = imgUrl;
+  div.appendChild(img);
   };
   const getHeadline = () => {
   let headline =`
@@ -50,7 +50,7 @@ const Setup = (() => {
       setIntro2(getIntro2());
     };
     const test = () => {
-      console.log('Setup is being imported!');
+      console.log('Setup is being imported! 1');
     };
     return {
      test,
