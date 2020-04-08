@@ -1,14 +1,14 @@
 const Setup = (() => {
   const getImage = () => {
-    //Left off here let img = https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260;;
-    return { img };
+    let imgSrc = "https://www.discoverlosangeles.com/sites/default/files/styles/hero/public/images/2019-01/lower-patio.jpg?itok=KGYP49fO"
+    return { imgSrc };
   };
-  const setImage = (imgUrl) => {
+  const setImage = (imgSrc) => {
   let div = document.querySelector('#content');
   console.log(div);
-  console.log(imgUrl);
+  console.log(imgSrc);
   let img = document.createElement('img');
-  img.src = imgUrl;
+  img.src = "https://www.discoverlosangeles.com/sites/default/files/styles/hero/public/images/2019-01/lower-patio.jpg?itok=KGYP49fO";
   div.appendChild(img);
   };
   const getHeadline = () => {
@@ -50,7 +50,7 @@ const Setup = (() => {
       setIntro2(getIntro2());
     };
     const test = () => {
-      console.log('Setup is being imported! 1');
+      console.log('Setup is being imported! asdfasdf');
     };
     return {
      test,
