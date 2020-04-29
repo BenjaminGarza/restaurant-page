@@ -1,18 +1,5 @@
 const Setup = (() => {
-  const setTabs = () => {
-    let div = document.querySelector('#content');
-    let home = document.createElement('label');
-    let menu = document.createElement('label');
-    let contact = document.createElement('label');
-    home.classList += "label";
-    home.innerText = "Home";
-    menu.innerText = "Menu";
-    menu.classList += "label";
-    console.log(menu.classList);
-    contact.innerText = "Contact";
-    contact.classList += "label";
-    div.append(home, menu, contact);
-  };
+  
   const setImage = () => {
   let div = document.querySelector('#content');
   let img = document.createElement('img');
@@ -49,14 +36,13 @@ const Setup = (() => {
       div.append(intro2.intro2);
     };
     const initialize = () => {
-      setTabs();
       setImage();
       setHeadline(getHeadline())
       setIntro(getIntro());
       setIntro2(getIntro2());
     };
     const test = () => {
-      console.log('Setup is ');
+      console.log('Home is a go');
     };
     return {
      test,
