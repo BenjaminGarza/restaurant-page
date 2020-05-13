@@ -21,7 +21,6 @@ const Menu = (() => {
 
   };
     const initialize = () => {
-     
     };
     const test = () => {
       console.log('Menu is a go');

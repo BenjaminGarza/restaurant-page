@@ -17,30 +17,40 @@ const setTabs = () => {
   contact.id = ("Contact");
   contact.innerText = "Contact";
   contact.classList += "label";
+  
   div.append(home, menu, contact);
 };
 setTabs();
-const events = (() => {
+const events = () => {
   const pageLoader = (pageToLoad) => {
     document.querySelector('#content').innerHTML = ""; //Clear #content div
     setTabs();// Re-append tabs
     switch(pageToLoad){
-      case "Home": Home.initialize();break;
-      case "Menu": Menu.initialize();break;
-      case "Contact": Contact.initialize();break;
+      case "Home": Home.initialize();
+        console.log("home fire");
+        events();
+        break;
+      case "Menu": Menu.initialize();
+        console.log("menu fire");
+        events();
+        break;
+      case "Contact": Contact.initialize()
+        console.log("contact fire");
+        events();
+        break;
     };
   };
   document.querySelector('#Home').addEventListener('click', function() {pageLoader(event.target.id);});
   document.querySelector('#Menu').addEventListener('click', function() {pageLoader(event.target.id);});
   document.querySelector('#Contact').addEventListener('click', function() {pageLoader(event.target.id);});
-})();
+};
+events();
 
 
 Home.test();
 Menu.test();
 Contact.test();
 Home.initialize();
-console.log(typeof(Home));
 //document.querySelector('#content').addEventListener('click', function() {console.log(event.target);});
 
 
