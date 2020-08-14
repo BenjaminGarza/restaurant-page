@@ -16,14 +16,25 @@ const loadMenu = () => {
     let main = mainContent();
     console.log(main), 'main';
 
+    let apps = [];
+    let appImages = [];
+    let appPrices = [8,9,8.5,7.5];
+    let appDescriptions = ['A crispy, tender event',
+  'Choose three appetizers to sample, the adventurous choice',
+  'Mini calzones, pockets of cheesy goodness',
+  'Mozarrella dipped in batter and fried for your delight'
+  ];
+
   };
 
   const entrees = () => {
-    
+    let main = mainContent();
+    console.log(main), 'main';
   };
 
   const desserts = () => {
-    
+    let main = mainContent();
+    console.log(main), 'main';
   };
 
   appetizers();
