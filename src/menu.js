@@ -28,8 +28,8 @@ const loadMenu = () => {
   for(let i=0; i<apps.length; i++){
     let menuItem = document.createElement('section');
     let imgDiv = document.createElement('div');
-    imgDiv.
-  }
+   
+  };
 
   };
 
