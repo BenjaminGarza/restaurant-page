@@ -1,0 +1,51 @@
+@media only screen and (min-width: 424px) {
+form {
+  display: grid;
+  background-color: lightgrey; 
+  min-width: 500px;
+}
+ form div {
+   display: grid;
+   grid-template-columns: 1.5fr 9fr 1fr;
+ }
+ aside{
+   vertical-align: text-top;
+ }
+   
+ h2{
+   font-size: xx-large;
+ }
+
+#content {
+  margin: auto;
+  width: 60%;
+  text-align: center; }
+
+.contact-button {
+  padding: 5px;
+  margin: 5px;
+}
+}
+@media only screen and (max-width: 424px) {
+  form {
+    border-radius: 2px solid black;
+    padding: 5px;
+    background-color: lightgrey; }
+   form div {
+     padding: 5px;
+     margin: 5px;
+   }
+   form div label{
+     margin: 15px;
+   }
+  
+  #content {
+    margin: auto;
+    width: 80%;
+    text-align: center; }
+  
+  .contact-button {
+    padding: 5px;
+    margin: 5px;
+  }
+}
