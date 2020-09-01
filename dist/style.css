@@ -1,18 +1,21 @@
 @media only screen and (min-width: 424px) {
-form {
+  body{
+    background-color: mintcream;
+  }
+.contact-form{
   display: grid;
-  background-color: lightgrey; 
+  background-color: lightblue;
+  border: black 1px solid; 
   min-width: 500px;
+  padding: 5px;
 }
- form div {
+ .form-div {
    display: grid;
    grid-template-columns: 1.5fr 9fr 1fr;
- }
- aside{
-   vertical-align: text-top;
+   padding: 10px;
  }
    
- h2{
+ .contact-title{
    font-size: xx-large;
  }
 
@@ -21,9 +24,16 @@ form {
   width: 60%;
   text-align: center; }
 
+.message-box{
+  height:100px;
+}
+.response-checkbox{
+  padding: 15px;
+  vertical-align: text-top;
+}
 .contact-button {
   padding: 5px;
-  margin: 5px;
+  margin: 15px;
 }
 }
 @media only screen and (max-width: 424px) {
