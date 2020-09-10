@@ -1,3 +1,4 @@
+
 const loadMenu = () => {
   let contentDiv = document.querySelector('#content'); 
   let titleDiv = document.createElement('div');
@@ -7,20 +8,25 @@ const loadMenu = () => {
   contentDiv.appendChild(titleDiv);
   const mainContent = () => {
     let menuSection = document.createElement('section');
+    menuSection.classList.add('food-section')
     const createMenuItems = (foodImages,foodPrices,foodNames,foodDescriptions) => {
       for(let i = 0; i < foodImages.length; i++){
         let menuItem = document.createElement('article');
         let photoContainer = document.createElement('figure');
         let img = document.createElement('img');
-        img.src = 'src/images/chickenStrips.jpg';
-        console.log(img.src);
+        img.src = 'https://dinnerthendessert.com/wp-content/uploads/2018/03/Buffalo-Chicken-Tenders-688x1032.jpg'
+        img.classList.add('image')
         photoContainer.appendChild(img);
+        photoContainer.classList.add('photo-container');
         let descriptionContainer = document.createElement('figcaption');
         let names = document.createTextNode(foodNames[i] + ': ');
+        let br = document.createElement('br');
         let description = document.createTextNode(foodDescriptions[i]);
         let prices = document.createTextNode('$'+ foodPrices[i] + ' ');
+        descriptionContainer.classList.add('description');
         descriptionContainer.appendChild(prices);
         descriptionContainer.appendChild(names);
+        descriptionContainer.appendChild(br);
         descriptionContainer.appendChild(description);
         menuItem.appendChild(photoContainer);
         menuItem.appendChild(descriptionContainer);
@@ -37,10 +43,10 @@ const loadMenu = () => {
       let appImages = ['test','test','test','test'];
       let appPrices = [8,9,8.5,7.5]; 
       let appTitles = ['Buffalo Chicken Strips', 
-      'Candied tomatoes on basil leaves','Mini calzones','Mozarella sticks'];
+      'Candied tomatoes on basil leaves','Smoked salmon bites','Mozarella sticks'];
       let appDescriptions = ['A crispy, tender event',
     'Crunchy toffee and ripe, juicy tomato',
-    'Pockets of cheesy goodness',
+    'Smoked salmon atop cream cheese and crunchy crackers',
     'Mozarrella dipped in batter and fried for your delight'
     ];
     menuSection.appendChild(sectionTitle);

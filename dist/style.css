@@ -35,8 +35,26 @@
   padding: 5px;
   margin: 15px;
 }
+.image{
+  height: 120px;
+  width: 120px;
+}
+.photo-container{
+  width: 200px;
+}
+.description{
+  width: 50%;
+  padding: 2rem;
+}
 .menu-item{
-  
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.food-section{
+ 
 }
 }
 @media only screen and (max-width: 424px) {
