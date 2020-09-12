@@ -4,7 +4,7 @@
   }
 .contact-form{
   display: grid;
-  background-color: lightblue;
+  background-color: lightgrey;
   border: black 1px solid; 
   min-width: 500px;
   padding: 5px;
@@ -53,8 +53,21 @@
   margin-left: auto;
   margin-right: auto;
 }
-.food-section{
- 
+.nav-bar{
+  display: flex;
+}
+.nav-item{
+  padding: 10px;
+}
+.restaurant-background{
+  background-image: url(https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/06/931/524/GelatoIstock.jpg?ve=1&tl=1);
+  height: 524px;
+  width: 931px;
+  margin: auto;
+}
+.title-style{
+  color: white;
+  text-shadow: 1px 1px black;
 }
 }
 @media only screen and (max-width: 424px) {

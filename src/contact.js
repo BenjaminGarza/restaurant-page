@@ -1,4 +1,4 @@
-const loadContactPage = () => {
+const loadContact = () => {
  let contentDiv = document.querySelector('#content');
  let contactTitle = document.createElement('h2');
  contactTitle.innerHTML = 'Contact us';
@@ -57,4 +57,4 @@ divButton.appendChild(buttonSubmit);
 document.querySelector('#content').appendChild(divButton);
 };
 
-export { loadContactPage };
+export { loadContact };
