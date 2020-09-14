@@ -90,4 +90,4 @@ const loadMenu = () => {
   mainContent();
 };
 
-export { loadMenu };
+export default loadMenu;

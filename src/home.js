@@ -18,4 +18,4 @@ const loadHome = () => {
   mainDiv.appendChild(div);
 };
 
-export { loadHome };
+export default loadHome;

@@ -57,4 +57,4 @@ const loadContact = () => {
   document.querySelector('#content').appendChild(divButton);
 };
 
-export { loadContact };
+export default loadContact;
